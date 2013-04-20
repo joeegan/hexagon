@@ -1,0 +1,10 @@
+-secondary_nav = structure[1][:children]
+
+%a{:href => "/projects/", :class => "slide", :style => "width: 181px; height: 100%;"}
+
+-secondary_nav.each_index do |secondary_idx|
+   -is_last = (secondary_idx == secondary_nav.size - 1)
+   -secondary_hash  = secondary_nav[secondary_idx]
+   -secondary_token = get_token(secondary_hash)
+   %a{ :href => "/projects/" + secondary_token, :class => "slide " + selected_secondary(secondary_token)}
+      -img_builder(img_path(secondary_idx+1), is_last)

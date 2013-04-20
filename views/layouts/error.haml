@@ -1,0 +1,36 @@
+!!! 5
+%html
+   %head
+      %meta{:charset => 'utf-8'}
+      %meta{:content => 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'}
+      %title Egan Wiesner
+      %meta{:content => 'Egan Wiesner is a London based Architectural and Interior Design Studio established in 2008 by Chris Egan and Will Wiesner.', :name => 'description'}
+      %meta{:content => "width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0", :name => "viewport"}
+      %link{:href => 'http://fonts.googleapis.com/css?family=EB+Garamond', :rel => 'stylesheet', :type => 'text/css'}
+      %link{:href => 'http://fonts.googleapis.com/css?family=Droid+Sans:400,700', :rel => 'stylesheet', :type => 'text/css'}
+
+      != css :application
+
+   %body.error
+      #outer
+         = partial :'nav'
+         #wrapper
+            .content
+               .bulletin.first.last.pillar.slide{:style => "border-right: none"}
+                  .wrap
+                     %p
+                        This page appears to have changed name or does not exist anymore. Please use the navigation to find the page you were looking for.
+
+         != js :app
+
+         :javascript
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-37239063-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+

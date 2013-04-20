@@ -1,0 +1,59 @@
+.control {
+   width: 112px;
+   position: absolute;
+   right: 0;
+   bottom: 12px;
+   cursor: pointer;
+   z-index: 1;
+}
+
+.control div {
+   text-indent: -9999px;
+   background-image: url(/images/arrow-right.png);
+   background-repeat: no-repeat;
+   background-position: 100% 100%;
+   opacity: 0;
+   filter: alpha(opacity=0);
+}
+
+.desktop .next {
+   opacity: 1;
+   filter: alpha(opacity=100);
+   cursor: pointer;
+}
+
+.control div:hover {
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.next-first {
+   display: block;
+   opacity: 1 !important;
+   filter: alpha(opacity=100) !important;
+}
+
+.desktop .next-first {
+   display: none !important;
+}
+
+.control-next {
+   background-position: 63px 100%;
+   right: 12px;
+}
+
+.control-prev {
+   right: auto;
+   left: 183px;
+}
+
+.control-prev div {
+   background-image: url(/images/arrow-left.png);
+   background-position: 12px 100%;
+}
+
+.disabled {
+   filter: alpha(opacity=0) !important;
+   opacity: 0 !important;
+   cursor: default;
+}

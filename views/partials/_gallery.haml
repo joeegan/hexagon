@@ -1,0 +1,32 @@
+-@hash[:images].each_with_index do |img, idx|
+   -is_last = (idx == @hash[:images].size - 1)
+
+   - text_path = 'pages/' + request.path
+   .slide{:class => is_last ? ' last' : ''}
+      -img_builder(img_path(img), is_last)
+
+      -if @is_secondary
+         -if has_multiple_images(@hash) && idx == 0
+            .next.next-first
+
+   -if !@is_secondary
+      .slide.pillar{:class => is_text_pos_bottom(@hash)}
+         .wrap
+            =haml (text_path).to_sym
+
+   -if is_yield_pos(idx, @hash)
+      .slide.pillar{:class => is_text_pos_bottom(@hash)}
+         .wrap
+            = haml (text_path + '/a').to_sym
+
+   -if is_yield_pos_b(idx, @hash)
+      .slide.pillar
+         .wrap
+            = haml (text_path + '/b').to_sym
+
+   -if is_yield_pos_c(idx, @hash)
+      .slide.pillar
+         .wrap
+            = haml (text_path + '/c').to_sym
+
+

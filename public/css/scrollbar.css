@@ -1,0 +1,2 @@
+.scrollbar { position: absolute; }
+.scrollbar div { color: white; width: 10px; height: 10px; display: none }

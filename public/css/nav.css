@@ -1,0 +1,104 @@
+.light #nav {
+   background: #fff;
+}
+.light #nav a,
+.light #nav li li a {
+   color: #666;
+}
+
+.light #nav a.selected {
+   color: #000;
+}
+
+.light #nav a:hover {
+   color: #000;
+}
+
+
+.solid-nav #nav {
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+#nav {
+   opacity: 0.8;
+   filter: alpha(opacity=80);
+   background: #000;
+   /*height: 570px;*/
+   height: 100%;
+   min-height: 600px;
+   width: 178px;
+   position: fixed;
+   left: 0;
+   z-index: 2;
+   box-shadow: 0px 0px 10px black;
+   font-size: 12px;
+   overflow: hidden;
+}
+.news #nav {
+   opacity: 1;
+   filter: alpha(opacity=100);
+}
+#nav-inner {
+   padding: 24px 0;
+}
+
+#nav a.logo {
+   margin-left: 21px;
+   margin-bottom: 72px;
+   display: block;
+}
+
+#nav ul {
+   list-style: none;
+   margin-left: 21px;
+   padding-left: 0;
+   margin-top: 0;
+}
+#nav ul ul {
+   position: static;
+   margin-left: 21px;
+   margin-top: 8px;
+   margin-bottom: 20px;
+   padding-left: 0px;
+}
+
+#nav ul.top {
+}
+
+#nav ul.bottom {
+   position: absolute;
+   bottom: 9px;
+   margin-bottom: 0;
+}
+
+#nav li {
+   margin: 0 0 10px 0;
+}
+
+#nav li li {
+   margin: 0 0 3px 0;
+}
+
+
+#nav a,
+#nav li li a {
+   color: #ccc;
+   text-decoration: none;
+}
+
+#nav a.selected {
+   color: #fff;
+   font-weight: bold;
+}
+
+#nav a:hover {
+   color: #fff;
+   text-decoration: none;
+}
+
+.contact-content {
+   left: 20px;
+   position: absolute;
+   bottom: 18px;
+   color: #ccc;
+}

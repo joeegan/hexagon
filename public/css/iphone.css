@@ -1,0 +1,21 @@
+body {
+  background: url(/images/static/contact/1.jpg) !important;
+  height: 100%;
+  min-height: 400px;
+  position: relative;
+}
+.col {
+   margin: 0 auto;
+   width: 346px;
+   background: rgba(0,0,0,0.7);
+   padding: 10px 30px;
+   height: 100%;
+   min-height: 400px;
+   color: #dedede !important;
+}
+.col .logo {
+   width: 134px;
+   display: block;
+   margin: auto;
+   margin-bottom: 20px;
+}

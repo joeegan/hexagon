@@ -1,0 +1,11 @@
+-h[:images].each_with_index do |img, idx|
+   - p = path + "#{img}.jpg"
+   - is_last = idx === h[:images].size - 1
+   .slide
+      %img.swipe{:src => p, :height => img_height(p), :width => img_width(p)}
+      -if is_last
+         .prev
+            prev
+      -else
+         .next
+            next     

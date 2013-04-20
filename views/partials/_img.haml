@@ -1,0 +1,7 @@
+/ -if @is_secondary && defined? current_secondary_hash[:images].length > 0
+/    -current_secondary_hash[:images].each do |img|
+/       %img.swipe{:src => "/images/static/#{current_primary}/#{current_secondary}/#{img}.jpg",  :height => img_height(img)}
+
+/ - else defined? current_hash[:images].length > 0
+/    -current_hash[:images].each do |img|
+/       %img.swipe{:src => "/images/static/#{current_primary}/#{img}.jpg",  :height => img_height(img)}

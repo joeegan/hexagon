@@ -1,0 +1,10 @@
+-secondary_nav = structure[1][:children]
+
+
+%ul.secondary{ :class => @show_projects_nav ? '' : 'none'}
+   -secondary_nav.each_index do |secondary_idx|
+      -secondary_hash  = secondary_nav[secondary_idx]
+      -secondary_token = get_token(secondary_hash)
+      %li
+         %a{ :href => "/projects/" + secondary_token, :class => selected_secondary(secondary_token)}
+            =secondary_hash[:title]
