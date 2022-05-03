@@ -8,21 +8,26 @@ GEM
     mobvious (0.3.1)
       mobileesp_converted (~> 0.2.0)
       rack (>= 1.2.0)
-    rack (1.5.2)
-    rack-protection (1.2.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    rack (2.2.3)
+    rack-protection (2.2.0)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
-    sinatra (1.3.3)
-      rack (~> 1.3, >= 1.3.6)
-      rack-protection (~> 1.2)
-      tilt (~> 1.3, >= 1.3.3)
+    ruby2_keywords (0.0.5)
+    sinatra (2.2.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
+      tilt (~> 2.0)
     sinatra-assetpack (0.0.11)
       jsmin
       rack-test
       sinatra
       tilt (>= 1.3.0)
-    tilt (1.3.3)
+    tilt (2.0.10)
+    yui-compressor (0.12.0)
 
 PLATFORMS
   ruby
@@ -31,6 +36,6 @@ DEPENDENCIES
   fastimage
   haml (= 3.1.3)
   mobvious
-  rack (= 1.5.2)
-  sinatra (= 1.3.3)
+  sinatra (= 2.2.0)
   sinatra-assetpack
+  yui-compressor
